@@ -67,5 +67,20 @@ public void testToStringContainsCorrectLabelsAndData () {
 
 }
 
+    @Test
+    public void testToStringHandlesEmptyField() {
+        Job job1 = new Job("Product tester", new Employer(""), new Location("Desert"), new PositionType(""), new CoreCompetency("Persistence"));
+
+        String emptyFieldJobTester = System.lineSeparator() +
+                "ID: " + job1.getId() + System.lineSeparator() +
+                "Name: Product tester" + System.lineSeparator() +
+                "Employer: Data not available" + System.lineSeparator() +
+                "Location: Desert" + System.lineSeparator() +
+                "Position Type: Data not available" + System.lineSeparator() +
+                "Core Competency: Persistence" + System.lineSeparator();
+
+        assertEquals(emptyFieldJobTester, job1.toString());
+    }
+
 
 }
