@@ -80,6 +80,7 @@
     "Gradle.JobTest.testJobConstructorSetsAllFields.executor": "Run",
     "Gradle.JobTest.testJobsForEquality.executor": "Run",
     "Gradle.JobTest.testSettingJobId.executor": "Run",
+    "Gradle.JobTest.testToStringContainsCorrectLabelsAndData.executor": "Run",
     "Gradle.JobTest.testToStringStartsAndEndsWithNewLine.executor": "Run",
     "Gradle.TestTaskFour.executor": "Run",
     "Gradle.TestTaskThree.executor": "Run",
@@ -95,8 +96,8 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.Tests in 'org.launchcode.techjobs.oo'">
-    <configuration name="JobTest.testJobConstructorSetsAllFields" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.JobTest">
+    <configuration name="JobTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -109,7 +110,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.launchcode.techjobs.oo.JobTest.testJobConstructorSetsAllFields&quot;" />
+            <option value="&quot;org.launchcode.techjobs.oo.JobTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -120,7 +121,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="JobTest.testJobsForEquality" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="JobTest.testToStringContainsCorrectLabelsAndData" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -133,7 +134,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.launchcode.techjobs.oo.JobTest.testJobsForEquality&quot;" />
+            <option value="&quot;org.launchcode.techjobs.oo.JobTest.testToStringContainsCorrectLabelsAndData&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -229,20 +230,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.JobTest.testJobConstructorSetsAllFields" />
-      <item itemvalue="Gradle.JobTest.testJobsForEquality" />
+      <item itemvalue="Gradle.JobTest.testToStringContainsCorrectLabelsAndData" />
       <item itemvalue="Gradle.JobTest.testToStringStartsAndEndsWithNewLine" />
       <item itemvalue="Gradle.TestTaskFour" />
+      <item itemvalue="Gradle.JobTest" />
       <item itemvalue="Gradle.Tests in 'org.launchcode.techjobs.oo'" />
       <item itemvalue="JUnit.JobTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Tests in 'org.launchcode.techjobs.oo'" />
+        <item itemvalue="Gradle.JobTest" />
         <item itemvalue="Gradle.JobTest.testToStringStartsAndEndsWithNewLine" />
+        <item itemvalue="Gradle.JobTest.testToStringContainsCorrectLabelsAndData" />
+        <item itemvalue="Gradle.Tests in 'org.launchcode.techjobs.oo'" />
         <item itemvalue="Gradle.TestTaskFour" />
-        <item itemvalue="Gradle.JobTest.testJobsForEquality" />
-        <item itemvalue="Gradle.JobTest.testJobConstructorSetsAllFields" />
       </list>
     </recent_temporary>
   </component>

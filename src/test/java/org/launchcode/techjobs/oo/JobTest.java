@@ -1,6 +1,7 @@
 package org.launchcode.techjobs.oo;
 
 import org.junit.Test;
+import org.w3c.dom.ls.LSOutput;
 
 import static org.junit.Assert.*;
 
@@ -44,19 +45,25 @@ public void testJobsForEquality () {
 @Test
 public void testToStringStartsAndEndsWithNewLine () {
     Job job1 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
-    String newLineTest = (System.lineSeparator() + System.lineSeparator());
 
-    assertEquals(newLineTest, job1.toString());
-
+    assertTrue(job1.toString().startsWith(System.lineSeparator()) && job1.toString().endsWith(System.lineSeparator()));
 
 }
 
 @Test
 public void testToStringContainsCorrectLabelsAndData () {
     Job job1 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
-    String newLineTest = (System.lineSeparator() + System.lineSeparator());
 
-    assertEquals(newLineTest, job1.toString());
+    String testDataAndLabels = System.lineSeparator() +
+            "ID: " + job1.getId() + "\n" +
+            "Name: " + "Product tester\n" +
+            "Employer: " + "ACME\n" +
+            "Location: " + "Desert\n" +
+            "Position Type: " + "Quality control\n" +
+            "Core Competency: " + "Persistence" +
+            System.lineSeparator();
+
+    assertEquals(testDataAndLabels, job1.toString());
 
 }
 

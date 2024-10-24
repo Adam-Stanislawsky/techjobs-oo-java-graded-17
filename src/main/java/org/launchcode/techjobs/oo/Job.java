@@ -49,7 +49,14 @@ public class Job {
 
     @Override
     public String toString() {
-        return System.lineSeparator() + System.lineSeparator();
+        return System.lineSeparator() +
+                "ID: " + this.getId() + System.lineSeparator() +
+                "Name: " + this.getName() + System.lineSeparator() +
+                "Employer: " + this.getEmployer().getValue() + System.lineSeparator() +
+                "Location: " + this.getLocation().getValue() + System.lineSeparator() +
+                "Position Type: " + this.getPositionType().getValue() + System.lineSeparator() +
+                "Core Competency: " + this.getCoreCompetency().getValue() +
+                System.lineSeparator();
     }
 
     // TODO: Add getters for each field EXCEPT nextId. Add setters for each field EXCEPT nextID
